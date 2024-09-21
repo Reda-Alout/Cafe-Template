@@ -126,7 +126,8 @@ const Footer = () => {
       </div>
       <div className="down">
         <span className="copyright">
-          Copyright © 2015 - 2020 Boréal Coffee Shop. All rights reserved.
+        &copy; Copyright 2024. Made by
+        <a rel="noreferrer"  href="https://redaalout-portfolio.web.app">REDA ALOUT</a>
         </span>
         <div className="payment-opts">
           <img
