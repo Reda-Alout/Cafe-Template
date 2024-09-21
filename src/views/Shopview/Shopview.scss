@@ -1,0 +1,309 @@
+.shopview {
+  padding-top: 120px;
+  .msg-and-sort {
+    text-transform: uppercase;
+    .container {
+      max-width: 1200px;
+      margin: 80px auto 100px auto;
+      .msg {
+        text-align: center;
+        margin: 0 0 30px 0;
+        .hl {
+          color: #f78f1e;
+          font-size: 1rem;
+          margin: 0 0 10px 0;
+        }
+        .main {
+          font-size: 2.2rem;
+        }
+      }
+      .sort {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.9rem;
+        .sort-by-list {
+          margin: 0 0 0 20px;
+          display: flex;
+          align-items: center;
+          .item {
+            padding: 0 20px;
+            border-right: 1px solid #8d8e8d;
+            font-weight: bold;
+            color: #8d8e8d;
+            cursor: pointer;
+            &:last-child {
+              border: none;
+            }
+          }
+          .active {
+            color: #f78f1e;
+          }
+        }
+      }
+    }
+  }
+
+  .sub-and-discover {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-transform: uppercase;
+    .sub {
+      color: #fff;
+      padding: 50px 20px;
+      background: #f78f1e;
+      .msg {
+        margin: 10px 0 20px 0;
+        font-size: 1.7rem;
+        line-height: 40px;
+      }
+      .form {
+        display: flex;
+        .email-input {
+          width: 70%;
+          background: transparent;
+          border: 1px solid #fff;
+          padding: 20px;
+          font-size: 1.2rem;
+          color: #fff;
+        }
+        .submit {
+          border: none;
+          background: #fff;
+          width: 30%;
+          color: #f78f1e;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .text {
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin: 0 10px 0 0;
+          }
+          .right-arrow {
+            width: 20px;
+          }
+        }
+        input::-webkit-input-placeholder {
+          color: #fff;
+        }
+        input:-moz-placeholder,
+        textarea:-moz-placeholder {
+          color: #fff;
+        }
+      }
+    }
+    .discover {
+      background: url('http://www.borealcoffee.ch/design/themes/boreal/assets/dist/images/content/blocks/block-listing-bottom.jpg');
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+      .container {
+        padding: 80px 0 0 0;
+        .que {
+          font-size: 1rem;
+          margin: 0 0 10px 0;
+        }
+        .msg {
+          font-size: 2rem;
+          margin: 0 0 20px 0;
+        }
+        .discover {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          padding: 15px 30px;
+          text-transform: uppercase;
+          border: 1px solid #fff;
+          .text {
+            font-weight: bold;
+            margin: 0 10px 0 0;
+          }
+          .right-arrow {
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .shopview {
+    .sub-and-discover {
+      grid-template-columns: 100%;
+      .discover {
+        .container {
+          padding: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .shopview {
+    .sub-and-discover {
+      .sub {
+        color: #fff;
+        padding: 30px;
+        background: #f78f1e;
+        .title {
+          font-size: 0.8rem;
+        }
+        .msg {
+          margin: 10px 0 20px 0;
+          font-size: 1.3rem;
+          line-height: 30px;
+        }
+        .form {
+          display: flex;
+          .email-input {
+            padding: 10px 20px;
+            font-size: 1rem;
+            width: 60%;
+          }
+          .submit {
+            width: 40%;
+            .text {
+              margin: 0 10px 0 0;
+            }
+            .right-arrow {
+              width: 10px;
+            }
+          }
+        }
+      }
+      .discover {
+        .container {
+          .que {
+            font-size: 0.8rem;
+            margin: 0 0 10px 0;
+          }
+          .msg {
+            font-size: 1.6rem;
+            margin: 0 0 20px 0;
+          }
+          .discover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            border: 1px solid #fff;
+            .text {
+              font-size: 0.9rem;
+            }
+            .right-arrow {
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .shopview {
+    .msg-and-sort {
+      .container {
+        margin: 0px auto 30px auto;
+        .msg {
+          .hl {
+            font-size: 0.8rem;
+            width: 90%;
+            margin: 0 auto 20px auto;
+            line-height: 20px;
+          }
+          .main {
+            font-size: 1.5rem;
+            width: 90%;
+            margin: auto;
+            line-height: 35px;
+          }
+        }
+        .sort {
+          .txt {
+            display: none;
+          }
+          .sort-by-list {
+            flex-wrap: wrap;
+            justify-content: center;
+            .item {
+              margin: 0 0 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .shopview {
+    .msg-and-sort {
+      .container {
+        .msg {
+          .hl {
+            font-size: 0.8rem;
+            margin: 0 auto 5px auto;
+            line-height: 18px;
+          }
+          .main {
+            font-size: 1.4rem;
+            line-height: 30px;
+          }
+        }
+        .sort {
+          .txt {
+            display: none;
+          }
+          .sort-by-list {
+            flex-wrap: wrap;
+            justify-content: center;
+            .item {
+              margin: 0 0 10px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .sub-and-discover {
+      .sub {
+        color: #fff;
+        padding: 30px;
+        background: #f78f1e;
+        .title {
+          font-size: 0.7rem;
+        }
+        .msg {
+          margin: 10px 0 20px 0;
+          font-size: 1.1rem;
+          line-height: 30px;
+        }
+        .form {
+          display: flex;
+          .email-input {
+            padding: 10px 20px;
+            font-size: 1rem;
+            width: 60%;
+          }
+          .submit {
+            width: 40%;
+            .text {
+              margin: 0 10px 0 0;
+              font-size: 0.7rem;
+            }
+            .right-arrow {
+              width: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
