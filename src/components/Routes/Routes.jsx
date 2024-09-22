@@ -8,6 +8,7 @@ import Mainlocationview from '../../views/Mainlocationview/Mainlocationview'
 import Sublocationview from '../../views/Sublocationview/Sublocationview'
 import Coffeecateringview from '../../views/Coffeecateringview/Coffeecateringview'
 import Contactview from '../../views/Contactview/Contactview';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min'
 
 class Routes extends Component {
   state = {}
@@ -22,13 +23,9 @@ class Routes extends Component {
             <Homeview {...props} topbarEffectToggle={topbarEffectToggle} />
           )}
         />
-        <Route
-          exact
-          path="/Coffee-Shop-Template"
-          render={(props) => (
-            <Homeview {...props} topbarEffectToggle={topbarEffectToggle} />
-          )}
-        />
+  <Route path="*">
+    <Redirect to="/" />
+  </Route>
         <Route
           exact
           path="/shop/:cat"
